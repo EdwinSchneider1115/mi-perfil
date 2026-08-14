@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil</title>
 
-    <link rel="stylesheet" href="{{ asset('css/perfil.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles.css') }}">
 </head>
 
 <body>
@@ -66,4 +66,18 @@
     </div>
 
 </body>
+<nav class="navbar">
+
+    <div class="logo">
+        Edwin Gomez
+    </div>
+
+    <div class="menu">
+        <a href="{{ url('/perfil') }}">Perfil</a>
+        <a href="{{ url('/perfil/intereses') }}">Intereses</a>
+        <a href="{{ url('/perfil/habilidades') }}">Habilidades</a>
+        <a href="{{ url('/perfil/metas') }}">Metas</a>
+    </div>
+
+</nav>
 </html>

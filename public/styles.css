@@ -1,0 +1,517 @@
+/* ================================
+   ESTILOS GENERALES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+    padding: 40px 20px;
+
+    color: #0f172a;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ================================
+   CABECERA
+================================ */
+
+.cabecera {
+    text-align: center;
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+.cabecera h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.cabecera p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   TARJETAS GENERALES
+================================ */
+
+.tarjeta,
+.habilidad,
+.meta,
+.perfil-card {
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ================================
+   INTERESES
+================================ */
+
+.intereses {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.tarjeta {
+    padding: 30px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.numero {
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+    color: #0f172a;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.tarjeta:last-child {
+    grid-column: 1 / -1;
+}
+
+
+/* ================================
+   HABILIDADES
+================================ */
+
+.habilidades {
+    width: 100%;
+}
+
+.habilidad {
+    padding: 40px;
+}
+
+.habilidad h2 {
+    color: #0f172a;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.habilidad p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* BARRA DE HABILIDAD */
+
+.barra {
+    width: 100%;
+
+    height: 10px;
+
+    background: #e2e8f0;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progreso {
+    width: 70%;
+
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+}
+
+.nivel {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   METAS
+================================ */
+
+.meta {
+    padding: 45px;
+}
+
+.meta h2 {
+    color: #0f172a;
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+.meta p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.objetivo {
+    background: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+
+    padding: 20px 22px;
+
+    border-radius: 0 12px 12px 0;
+}
+
+.objetivo span {
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.objetivo strong {
+    color: #1e293b;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   PERFIL
+================================ */
+
+.perfil-card {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+.perfil-card h1 {
+    font-size: 38px;
+
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: #64748b;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* FOTO DE PERFIL */
+
+.foto-container {
+    width: 160px;
+    height: 160px;
+
+    margin: 0 auto 30px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid #2563eb;
+
+    background: #e2e8f0;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* INFORMACIÓN DEL PERFIL */
+
+.informacion {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: left;
+}
+
+.dato {
+    display: flex;
+
+    align-items: center;
+
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.25s ease;
+}
+
+.dato:hover {
+    transform: translateY(-3px);
+
+    background: #eff6ff;
+
+    border-color: #93c5fd;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #dbeafe;
+
+    border-radius: 12px;
+
+    margin-right: 15px;
+}
+
+.dato h3 {
+    color: #334155;
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+
+.dato p {
+    color: #0f172a;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .cabecera h1 {
+        font-size: 32px;
+    }
+
+    .intereses {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta:last-child {
+        grid-column: auto;
+    }
+
+    .habilidad {
+        padding: 30px 25px;
+    }
+
+    .meta {
+        padding: 30px 25px;
+    }
+
+    .meta h2 {
+        font-size: 25px;
+    }
+
+    .perfil-card {
+        padding: 30px 20px;
+    }
+
+    .perfil-card h1 {
+        font-size: 30px;
+    }
+
+    .foto-container {
+        width: 130px;
+        height: 130px;
+    }
+
+    .dato p {
+        font-size: 14px;
+    }
+
+    
+}
+/* ================================
+   NAVEGACIÓN
+================================ */
+
+.navbar {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto 30px;
+
+    padding: 18px 25px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: #0f172a;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+
+    gap: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+
+    color: #475569;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    transition: 0.25s ease;
+}
+
+.menu a:hover {
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+
+        padding: 8px 11px;
+    }
+}
